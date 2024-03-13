@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} antialiased bg-gray-01`}>
+        <div vaul-drawer-wrapper="" className="bg-gray-01 min-h-screen">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
