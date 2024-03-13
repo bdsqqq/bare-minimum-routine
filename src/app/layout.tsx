@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Cabinet } from "@/components/drawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased bg-gray-01`}>
         <div vaul-drawer-wrapper="" className="bg-gray-01 min-h-screen">
           {children}
+          <Cabinet />
         </div>
       </body>
     </html>

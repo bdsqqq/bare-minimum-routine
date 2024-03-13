@@ -1,11 +1,19 @@
-import { Drawer } from "@/components/drawer";
+"use client";
+import { drawer } from "@/components/drawer";
 
 export default function Home() {
   return (
     <>
       <main className="container">
         <h1>Bare minimum</h1>
-        <Drawer />
+
+        <button
+          onClick={() => {
+            drawer({ content: <div>Drawer content</div> });
+          }}
+        >
+          Open Drawer
+        </button>
       </main>
     </>
   );
