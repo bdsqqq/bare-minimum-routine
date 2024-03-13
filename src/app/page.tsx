@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Bare minimum</h1>
+      <h1 className="bg-gray-02">Bare minimum</h1>
     </main>
   );
 }
