@@ -1,7 +1,7 @@
 import { db } from "../drizzle/db";
 import { revalidateTag, unstable_cache } from "next/cache";
 
-import { routine } from "@/drizzle/schema";
+import { workout } from "@/drizzle/schema";
 
 const possible_exercises = [
   "walking lunges",
@@ -10,7 +10,7 @@ const possible_exercises = [
   "plank shoulder taps",
 ];
 
-type newRoutine = typeof routine.$inferInsert;
+type newRoutine = typeof workout.$inferInsert;
 
 async function createRoutine$(formData: FormData) {
   "use server";
@@ -43,12 +43,12 @@ async function createRoutine$(formData: FormData) {
 const insertRoutine$ = async (newRoutine: newRoutine) => {
   "use server";
 
-  return await db.insert(routine).values(newRoutine);
+  return await db.insert(workout).values(newRoutine);
 };
 
 const getRoutines = unstable_cache(
   async () => {
-    return await db.select().from(routine);
+    return await db.select().from(workout);
   },
   ["routines"],
   {

@@ -12,7 +12,7 @@ export type Circuit = {
   sets: Set[];
 };
 
-export const routine = sqliteTable("routine", {
+export const workout = sqliteTable("workout", {
   id: integer("id").primaryKey({ autoIncrement: true }),
   timestamp: text("timestamp").default(sql`CURRENT_TIMESTAMP`),
   circuits: blob("circuits", {
