@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:dev": "turso dev",
     "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite",
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
