@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1710448286279,
+      "tag": "0000_minor_sunspot",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1710449727786,
+      "tag": "0001_concerned_namor",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1710450267597,
+      "tag": "0002_petite_stranger",
+      "breakpoints": true
+    }
+  ]
+}

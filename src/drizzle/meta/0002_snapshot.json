@@ -1,0 +1,45 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "id": "90aa164b-e4bd-4227-bb61-c766d202edad",
+  "prevId": "55e67d00-d587-4cb5-8e9a-85686f1814d2",
+  "tables": {
+    "routine": {
+      "name": "routine",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "timestamp": {
+          "name": "timestamp",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "circuits": {
+          "name": "circuits",
+          "type": "blob",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
