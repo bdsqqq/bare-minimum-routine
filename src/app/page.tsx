@@ -1,5 +1,5 @@
 import { db } from "../drizzle/db";
-import { revalidateTag, unstable_cache } from "next/cache";
+import { unstable_cache, updateTag } from "next/cache";
 
 import { workout } from "@/drizzle/schema";
 
@@ -36,7 +36,7 @@ async function createRoutine$(formData: FormData) {
 
   const routineRes = await insertRoutine$(newRoutine);
 
-  revalidateTag("routines");
+  updateTag("routines");
   console.log(routineRes);
 }
 
